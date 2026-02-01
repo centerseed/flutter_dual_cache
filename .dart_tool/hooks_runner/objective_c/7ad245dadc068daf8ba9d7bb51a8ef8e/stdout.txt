@@ -1,0 +1,60 @@
+Running `(cd /Users/wubaizong/.pub-cache/hosted/pub.dev/objective_c-9.2.5/; TMPDIR=/var/folders/yw/0fw5n4hs4r75vjh6qy18lm0w0000gp/T/ PATH=/Users/wubaizong/.local/bin:/Users/wubaizong/.antigravity/antigravity/bin:/Users/wubaizong/.antigravity/antigravity/bin:/Users/wubaizong/.antigravity/antigravity/bin:/Users/wubaizong/flutter/flutter/bin:/Users/wubaizong/.codeium/windsurf/bin:/opt/homebrew/opt/mysql-client/bin:/usr/local/mysql/bin:/usr/local/opt/mysql-client/bin:/Users/wubaizong/.yarn/bin:/Users/wubaizong/.config/yarn/global/node_modules/.bin:/opt/homebrew/bin:/Users/wubaizong/.nvm/versions/node/v17.3.0/bin:/Users/wubaizong/google-cloud-sdk/bin:/Users/wubaizong/miniforge3/bin:/Users/wubaizong/miniforge3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin HOME=/Users/wubaizong /Users/wubaizong/flutter/flutter/bin/cache/dart-sdk/bin/dart --packages=/Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/package_config.json /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/objective_c/7ad245dadc068daf8ba9d7bb51a8ef8e/hook.dill --config=/Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/objective_c/7ad245dadc068daf8ba9d7bb51a8ef8e/input.json )`.
+INFO: 2026-02-01 16:20:45.614902: Running `/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang --version`.
+
+INFO: 2026-02-01 16:20:45.733935: Running `/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang --version`.
+
+INFO: 2026-02-01 16:20:45.744923: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 -c /Users/wubaizong/.pub-cache/hosted/pub.dev/objective_c-9.2.5/src/include/dart_api_dl.c -fpic -I src -o /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/include/dart_api_dl.c.o
+
+INFO: 2026-02-01 16:20:45.745186: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 -c /Users/wubaizong/.pub-cache/hosted/pub.dev/objective_c-9.2.5/src/objective_c.c -fpic -I src -o /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c.c.o
+
+INFO: 2026-02-01 16:20:45.745340: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 -c /Users/wubaizong/.pub-cache/hosted/pub.dev/objective_c-9.2.5/test/util.c -fpic -I src -o /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/test/util.c.o
+
+INFO: 2026-02-01 16:20:45.745425: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 -x objective-c -fobjc-arc -c /Users/wubaizong/.pub-cache/hosted/pub.dev/objective_c-9.2.5/src/input_stream_adapter.m -fpic -I src -o /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/input_stream_adapter.m.o
+
+INFO: 2026-02-01 16:20:45.745552: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 -x objective-c -fobjc-arc -c /Users/wubaizong/.pub-cache/hosted/pub.dev/objective_c-9.2.5/src/objective_c.m -fpic -I src -o /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c.m.o
+
+INFO: 2026-02-01 16:20:45.745625: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 -x objective-c -fobjc-arc -c /Users/wubaizong/.pub-cache/hosted/pub.dev/objective_c-9.2.5/src/observer.m -fpic -I src -o /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/observer.m.o
+
+
+
+INFO: 2026-02-01 16:20:45.745766: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 -x objective-c -fobjc-arc -c /Users/wubaizong/.pub-cache/hosted/pub.dev/objective_c-9.2.5/src/protocol.m -fpic -I src -o /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/protocol.m.o
+INFO: 2026-02-01 16:20:45.745842: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 -x objective-c -fobjc-arc -c /Users/wubaizong/.pub-cache/hosted/pub.dev/objective_c-9.2.5/src/objective_c_bindings_generated.m -fpic -I src -o /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c_bindings_generated.m.o
+
+INFO: 2026-02-01 16:20:45.873278: Generated /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c.c.o
+
+s_runner/shared/objective_c/build/7ad245dadc/obj/src/include/dart_api_dl.c.o
+INFO: 2026-02-01 16:20:45.873260: 
+INFO: 2026-02-01 16:20:45.873271: 
+
+INFO: 2026-02-01 16:20:45.878348: 
+INFO: 2026-02-01 16:20:45.878420: 
+INFO: 2026-02-01 16:20:45.878429: Generated /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/test/util.c.o
+
+o
+
+INFO: 2026-02-01 16:20:45.882002: 
+INFO: 2026-02-01 16:20:45.882032: 
+INFO: 2026-02-01 16:20:45.882041: Generated /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/protocol.m.o
+
+INFO: 2026-02-01 16:20:46.087703: 
+INFO: 2026-02-01 16:20:46.087741: 
+INFO: 2026-02-01 16:20:46.087751: Generated /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/ns_number.m.o
+
+INFO: 2026-02-01 16:20:46.094534: 
+INFO: 2026-02-01 16:20:46.094564: 
+INFO: 2026-02-01 16:20:46.094574: Generated /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c.m.o
+
+INFO: 2026-02-01 16:20:46.095597: 
+INFO: 2026-02-01 16:20:46.095613: 
+INFO: 2026-02-01 16:20:46.095621: Generated /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/input_stream_adapter.m.o
+
+INFO: 2026-02-01 16:20:46.105695: 
+INFO: 2026-02-01 16:20:46.105724: 
+INFO: 2026-02-01 16:20:46.105733: Generated /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c_bindings_generated.m.o
+
+INFO: 2026-02-01 16:20:46.105984: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -shared -Wl,-encryptable -undefined dynamic_lookup -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/include/dart_api_dl.c.o /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c.c.o /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/test/util.c.o /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/input_stream_adapter.m.o /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c.m.o /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/observer.m.o /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/ns_number.m.o /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/protocol.m.o /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c_bindings_generated.m.o -o /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/objective_c.dylib
+
+INFO: 2026-02-01 16:20:46.216357: 
+INFO: 2026-02-01 16:20:46.216402: 
+INFO: 2026-02-01 16:20:46.216411: Generated /Users/wubaizong/Naruvia/packages/flutter_dual_cache/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/objective_c.dylib
+
