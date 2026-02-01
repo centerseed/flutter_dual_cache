@@ -78,7 +78,8 @@ class HiveCacheStorage<T, ID> {
       final data = _box!.get(key);
       if (data != null) {
         try {
-          final item = fromJson(Map<String, dynamic>.from(data));
+          final jsonData = _deepCastToStringDynamic(data);
+          final item = fromJson(jsonData);
           items.add(item);
         } catch (e) {
           debugPrint('HiveCacheStorage: Failed to parse item $key: $e');
@@ -89,6 +90,31 @@ class HiveCacheStorage<T, ID> {
     return items;
   }
 
+  /// Recursively cast a Map to Map<String, dynamic>.
+  Map<String, dynamic> _deepCastToStringDynamic(Map data) {
+    return data.map((key, value) {
+      final stringKey = key.toString();
+      if (value is Map) {
+        return MapEntry(stringKey, _deepCastToStringDynamic(value));
+      } else if (value is List) {
+        return MapEntry(stringKey, _deepCastList(value));
+      }
+      return MapEntry(stringKey, value);
+    });
+  }
+
+  /// Recursively process a List for proper type casting.
+  List<dynamic> _deepCastList(List list) {
+    return list.map((item) {
+      if (item is Map) {
+        return _deepCastToStringDynamic(item);
+      } else if (item is List) {
+        return _deepCastList(item);
+      }
+      return item;
+    }).toList();
+  }
+
   /// Get a single item by ID.
   Future<T?> getById(ID id) async {
     _ensureInitialized();
@@ -97,7 +123,8 @@ class HiveCacheStorage<T, ID> {
     if (data == null) return null;
 
     try {
-      return fromJson(Map<String, dynamic>.from(data));
+      final jsonData = _deepCastToStringDynamic(data);
+      return fromJson(jsonData);
     } catch (e) {
       debugPrint('HiveCacheStorage: Failed to parse item $id: $e');
       return null;

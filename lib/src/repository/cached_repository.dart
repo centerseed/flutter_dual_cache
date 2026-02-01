@@ -225,11 +225,14 @@ abstract class CachedRepository<T, ID> {
     try {
       await _storage.initialize();
 
+      // Check if disposed during initialization
+      if (_isDisposed) return;
+
       // Step 1: Load from cache
       final cachedItems = await _storage.getAll();
       final lastSync = _storage.lastSyncTime;
 
-      if (cachedItems.isNotEmpty) {
+      if (cachedItems.isNotEmpty && !_isDisposed) {
         // Emit cached data immediately
         final displayData = transformForDisplay(cachedItems);
         _subject.add(
@@ -237,9 +240,13 @@ abstract class CachedRepository<T, ID> {
         );
       }
 
+      // Check if disposed before network fetch
+      if (_isDisposed) return;
+
       // Step 2: Fetch from network
       await _fetchRemote(silent: cachedItems.isNotEmpty);
     } catch (e, st) {
+      if (_isDisposed) return;
       debugPrint('CachedRepository[$boxName]: Initialization error: $e');
       _subject.add(
         _subject.value.withError(e, 'Initialization failed: $e'),
@@ -249,14 +256,19 @@ abstract class CachedRepository<T, ID> {
   }
 
   Future<void> _fetchRemote({required bool silent}) async {
+    if (_isDisposed) return;
     _lastRefreshAttempt = DateTime.now();
 
     try {
-      if (!silent) {
+      if (!silent && !_isDisposed) {
         _subject.add(_subject.value.copyWith(isLoading: true, clearError: true));
       }
 
       final items = await fetchFromRemote();
+
+      // Check if disposed during fetch
+      if (_isDisposed) return;
+
       final cacheData = transformForCache(items);
       final displayData = transformForDisplay(items);
 
@@ -264,8 +276,11 @@ abstract class CachedRepository<T, ID> {
       await _storage.saveAll(cacheData);
 
       // Emit to stream
-      _subject.add(_subject.value.withNetworkData(displayData));
+      if (!_isDisposed) {
+        _subject.add(_subject.value.withNetworkData(displayData));
+      }
     } catch (e, st) {
+      if (_isDisposed) return;
       debugPrint('CachedRepository[$boxName]: Fetch error: $e');
       _subject.add(
         _subject.value.withError(e, 'Network request failed: $e'),
